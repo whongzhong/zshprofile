@@ -80,7 +80,8 @@ zstyle :prompt:pure:host color '#a7bed3'
 zstyle :prompt:pure:path color '#7fa6c3'
 zstyle :prompt:pure:git color '#ffcaaf'
 zstyle :prompt:pure:virtualenv color '#90d6c4'
-zstyle ':prompt:pure:prompt:*' color '#7bcc8f'
+zstyle ':prompt:pure:prompt:success' color '#7bcc8f'
+zstyle ':prompt:pure:prompt:error' color '#ff6666'
 
 prompt pure
 
