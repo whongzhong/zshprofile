@@ -37,6 +37,18 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# include exa
+PATH=$PATH:$HOME/local/zsh/plugins/exa/bin:$HOME/local/bin
+export PATH
+
+source ~/local/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
+source ~/local/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
+
+
 # initialise nice autocompletion
 autoload -U compinit && compinit
 
@@ -63,6 +75,7 @@ zstyle :prompt:pure:git:stash show yes
 #true color
 export COLORTERM=truecolor
 zstyle :prompt:pure:user color '#a6db99'
+zstyle :prompt:pure:user:root color cyan
 zstyle :prompt:pure:host color '#a7bed3'
 zstyle :prompt:pure:path color '#7fa6c3'
 zstyle :prompt:pure:git color '#ffcaaf'
@@ -106,17 +119,6 @@ setopt no_nomatch
 # autoload -U colors
 #colors
 # plugins
-
-
-# include exa
-PATH=$PATH:$HOME/local/zsh/plugins/exa/bin:$HOME/local/bin
-export PATH
-
-source ~/local/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
-
-source ~/local/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 
 # load colors and refresh
 #autoload -U colors && colors
