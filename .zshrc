@@ -48,6 +48,8 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 source ~/local/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
 
+# initialize true color for tmux
+export TERM=xterm-256color
 
 # initialise nice autocompletion
 autoload -U compinit && compinit
